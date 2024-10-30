@@ -1,0 +1,146 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<style class="CSS">
+    *{
+        margin: 0px;
+        padding: 0px;
+        box-sizing: border-box;
+    }
+
+    .Header{
+        background: rgb(255, 188, 188);
+        height: 50px;   width: 100%;
+        align-items: center;
+
+    }
+
+    .InfoLine{
+        margin: 2%;
+    }
+
+    .Datum{
+        display: flex;
+        flex-direction: row;
+    }
+
+    img{
+        width: 100%;    height: 200px;
+        object-fit: cover;
+    }
+
+    .OmOss{
+        background-color: grey;
+    }
+</style>
+
+<body> 
+    <div class="Header">
+        <h1>Hemmsida</h1>
+    </div>
+
+    <div class="InfoLine">
+        <a href="">Mer</a>
+        <a href="">Om oss</a>
+        <a href="">Ansök evenemang</a>
+    </div>
+
+    <img src="https://img.goodfon.com/wallpaper/nbig/5/50/svinya-priroda-fon-3521.webp" alt="pig"><br>
+
+    <div class="Ansökan"><h2>Ansök om evenemang nedan</h2>
+        <form>
+            <label for="fname">Förnamn:</label>
+            <input type="text" id="fname" name="fname" value="Guntirat"><br>
+
+            <label for="lname">Efternamn:</label>
+            <input type="text" id="lname" name="lname" value="Singsaeng"><br>
+
+            <label for="mail">Mail:</label>
+            <input type="text" id="mail" name="mail" value="EDUgusi1@utb.karlskoga.se"><br>
+        </form><br>
+
+        <div class="Datum">
+            <div class="Dag">Dag:
+                <select id="Dag"> 
+                    <option value="1">1</option>
+                    <option value="2">2</option>
+                    <option value="3">3</option>
+                    <option value="4">4</option>
+                    <option value="5">5</option>
+                    <option value="6">6</option>
+                    <option value="7">7</option>
+                    <option value="8">8</option>
+                    <option value="9">9</option>
+                    <option value="10">10</option>
+                    <option value="11">11</option>
+                    <option value="12">12</option>
+                    <option value="13">13</option>
+                    <option value="14">14</option>
+                    <option value="15">15</option>
+                    <option value="16">16</option>
+                    <option value="17">17</option>
+                    <option value="18">18</option>
+                    <option value="19">19</option>
+                    <option value="20">20</option>
+                    <option value="21">21</option>
+                    <option value="22">22</option>
+                    <option value="23">23</option>
+                    <option value="24">24</option>
+                    <option value="25">25</option>
+                    <option value="26">26</option>
+                    <option value="27">27</option>
+                    <option value="28">28</option>
+                    <option value="29">29</option>
+                    <option value="30">30</option>
+                    <option value="31">31</option>
+                </select>
+            </div>
+
+            <div class="Månad">Månad:
+                <select id="cars">
+                    <option value="Januari">Januari</option>
+                    <option value="Februari">Februari</option>
+                    <option value="Mars">Mars</option>
+                    <option value="April">April</option>
+                    <option value="Maj">April</Maj>
+                    <option value="Juni">Juni</option>
+                    <option value="Juli">Juli</option>
+                    <option value="Augusti">Augusti</option>
+                    <option value="September">September</option>
+                    <option value="Oktober">Oktober</option>
+                    <option value="November">November</option>
+                    <option value="December">December</option>
+                </select>
+            </div>
+
+            <div class="År">År:
+                <select id="År">
+                    <option value="2024">2024</option>
+                    <option value="2025">2025</option>
+                    <option value="2026">2026</option>
+                </select>
+            </div>
+        </div>
+        
+        <div class="Pris">
+            <form></form>
+                <label for="Pris">Pris och specifaktioner: </label><br>
+                <textarea name="pris" id="pris" rows="4" cols="50"></textarea><br>
+                <input type="submit" value="Submit">
+            </form>
+        </div>
+    </div>
+
+    <br>
+    <div class="OmOss">
+        <a href="">Om oss</a>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Perferendis quam aliquam consectetur eius delectus alias asperiores voluptas nemo minus voluptates culpa similique sit, modi consequuntur incidunt accusantium aspernatur assumenda necessitatibus.</p>
+    
+    </div>
+</body>
+</html>
