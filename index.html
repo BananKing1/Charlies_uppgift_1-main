@@ -4,6 +4,9 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Noto+Serif:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
 </head>
 
 <style class="CSS">
@@ -13,15 +16,31 @@
         box-sizing: border-box;
     }
 
+    h1{
+        font-family: "Noto Serif", serif;
+    }
+
+    h2{
+        font-family: "Noto Serif", serif;
+    }
+
+    p{
+        font-family: "Noto Serif", serif;
+    }
+
     .Header{
-        background: rgb(255, 188, 188);
+        background: pink;
         height: 50px;   width: 100%;
         align-items: center;
-
     }
 
     .InfoLine{
-        margin: 2%;
+        display: flex;
+        background-color: pink;
+    }
+
+    .InfoLine a{
+        padding-left: 2%;
     }
 
     .Datum{
@@ -29,19 +48,68 @@
         flex-direction: row;
     }
 
-    img{
+    .HeaderPic img{
         width: 100%;    height: 200px;
         object-fit: cover;
     }
 
+    .MorePig{
+        background-color: pink;
+        border-radius: 2%;
+        display: flex;  flex-direction: row;    margin: 1%;
+        justify-content: center;        
+    }
+
+    .MorePig .text{
+        margin: 1%;
+    }
+
+    .MorePig img{
+        width: 40%; height: auto;
+        object-fit: cover;
+        border-top-right-radius: 2%;
+        border-bottom-right-radius: 2%;
+    }
+    
+    .ansök_pic{
+        display: flex;  flex-direction: row;
+        margin: 2%;
+        justify-content: center;
+    }
+    
+    .ansök_pic .Ansökan{
+        width: 400px;   height: auto;
+        justify-items: center;
+        background-color: pink;
+        border-top-left-radius: 2%; border-bottom-left-radius: 2%;
+    }
+    
+    .ansök_pic img{
+        width: 40%;    height: auto;
+        object-fit: cover;
+        border-top-right-radius: 2%;    border-bottom-right-radius: 2%;
+    }
+
     .OmOss{
-        background-color: grey;
+        width: 100%;    height: 200px;
+        background-color: pink;
+        justify-items: center;
+
+    }
+
+    .OmOss .text2{
+        margin: 1%;
     }
 </style>
 
 <body> 
+
     <div class="Header">
         <h1>Hemmsida</h1>
+    </div>
+
+    <div class="HeaderPic">
+        <img src="https://img.goodfon.com/wallpaper/nbig/5/50/svinya-priroda-fon-3521.webp" alt="pig"><br>
     </div>
 
     <div class="InfoLine">
@@ -50,97 +118,112 @@
         <a href="">Ansök evenemang</a>
     </div>
 
-    <img src="https://img.goodfon.com/wallpaper/nbig/5/50/svinya-priroda-fon-3521.webp" alt="pig"><br>
-
-    <div class="Ansökan"><h2>Ansök om evenemang nedan</h2>
-        <form>
-            <label for="fname">Förnamn:</label>
-            <input type="text" id="fname" name="fname" value="Guntirat"><br>
-
-            <label for="lname">Efternamn:</label>
-            <input type="text" id="lname" name="lname" value="Singsaeng"><br>
-
-            <label for="mail">Mail:</label>
-            <input type="text" id="mail" name="mail" value="EDUgusi1@utb.karlskoga.se"><br>
-        </form><br>
-
-        <div class="Datum">
-            <div class="Dag">Dag:
-                <select id="Dag"> 
-                    <option value="1">1</option>
-                    <option value="2">2</option>
-                    <option value="3">3</option>
-                    <option value="4">4</option>
-                    <option value="5">5</option>
-                    <option value="6">6</option>
-                    <option value="7">7</option>
-                    <option value="8">8</option>
-                    <option value="9">9</option>
-                    <option value="10">10</option>
-                    <option value="11">11</option>
-                    <option value="12">12</option>
-                    <option value="13">13</option>
-                    <option value="14">14</option>
-                    <option value="15">15</option>
-                    <option value="16">16</option>
-                    <option value="17">17</option>
-                    <option value="18">18</option>
-                    <option value="19">19</option>
-                    <option value="20">20</option>
-                    <option value="21">21</option>
-                    <option value="22">22</option>
-                    <option value="23">23</option>
-                    <option value="24">24</option>
-                    <option value="25">25</option>
-                    <option value="26">26</option>
-                    <option value="27">27</option>
-                    <option value="28">28</option>
-                    <option value="29">29</option>
-                    <option value="30">30</option>
-                    <option value="31">31</option>
-                </select>
-            </div>
-
-            <div class="Månad">Månad:
-                <select id="cars">
-                    <option value="Januari">Januari</option>
-                    <option value="Februari">Februari</option>
-                    <option value="Mars">Mars</option>
-                    <option value="April">April</option>
-                    <option value="Maj">April</Maj>
-                    <option value="Juni">Juni</option>
-                    <option value="Juli">Juli</option>
-                    <option value="Augusti">Augusti</option>
-                    <option value="September">September</option>
-                    <option value="Oktober">Oktober</option>
-                    <option value="November">November</option>
-                    <option value="December">December</option>
-                </select>
-            </div>
-
-            <div class="År">År:
-                <select id="År">
-                    <option value="2024">2024</option>
-                    <option value="2025">2025</option>
-                    <option value="2026">2026</option>
-                </select>
-            </div>
-        </div>
+    <div class="MorePig">
+        <div class="text">
+            <h2>Lorem Ipsum</h2>
+            <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Esse accusamus, ea dicta ex animi nisi aliquam sunt facere numquam soluta, eum assumenda deleniti aliquid. Pariatur adipisci facere corporis minus incidunt? Lorem ipsum, dolor sit amet consectetur adipisicing elit. Vel accusantium recusandae vitae alias at totam sint! Praesentium id nulla odio iusto saepe, dolore magni minima perspiciatis aspernatur, ratione repellendus maiores.Lorem ipsum dolor sit amet consectetur adipisicing elit. Veritatis earum, incidunt explicabo tenetur consectetur ab iste molestiae deserunt eaque dolorem aliquam excepturi aut mollitia et hic? Reiciendis veritatis doloremque incidunt? Lorem ipsum dolor sit amet consectetur adipisicing elit. Maiores quo voluptate sit sapiente incidunt, nemo dignissimos nobis illo. Dicta aliquam maxime deserunt sequi, itaque mollitia inventore? Aperiam doloribus a in?</p><br>
         
-        <div class="Pris">
-            <form></form>
-                <label for="Pris">Pris och specifaktioner: </label><br>
-                <textarea name="pris" id="pris" rows="4" cols="50"></textarea><br>
-                <input type="submit" value="Submit">
-            </form>
+            <h2>Loreeem Ipsum!!</h2>
+            <p>lorem ipsum Lorem ipsum dolor, sit amet consectetur adipisicing elit. Deleniti, totam laborum? Tempora consectetur ex eum voluptatum at ab quisquam dolores id, saepe vero eligendi enim dolorum vitae pariatur officiis eaque! Lorem ipsum dolor sit amet, consectetur adipisicing elit. Hic corrupti vero obcaecati explicabo debitis dolor reprehenderit, dolorum maxime atque et rem commodi magnam excepturi iure qui nobis accusamus. Assumenda, earum? Lorem ipsum dolor sit amet consectetur adipisicing elit. Blanditiis voluptas omnis quibusdam, consectetur accusamus est corrupti quam commodi distinctio delectus alias consequuntur voluptatem obcaecati vel similique suscipit et dolorem asperiores. Lorem ipsum dolor sit amet, consectetur adipisicing elit. Illo ut adipisci, soluta quidem iusto beatae repellat suscipit, perferendis tempora culpa odio quia? Ab dolorem officia quam debitis! Neque, ullam consequuntur!</p>
         </div>
+        <img src="https://i2.pickpik.com/photos/51/659/720/piglet-wildpark-poing-baby-small-pigs-preview.jpg" alt="Spotted">
+    </div>
+    
+    <div class = "ansök_pic">
+        <div class="Ansökan"><h2>Ansök om evenemang nedan</h2>
+            <form>
+                <label for="fname">Förnamn:</label>
+                <input type="text" id="fname" name="fname" value="Guntirat"><br>
+
+                <label for="lname">Efternamn:</label>
+                <input type="text" id="lname" name="lname" value="Singsaeng"><br>
+
+                <label for="mail">Mail:</label>
+                <input type="text" id="mail" name="mail" value="EDUgusi1@utb.karlskoga.se"><br>
+            </form><br>
+
+            <div class="Datum">
+                <div class="Dag">Dag:
+                    <select id="Dag"> 
+                        <option value="1">1</option>
+                        <option value="2">2</option>
+                        <option value="3">3</option>
+                        <option value="4">4</option>
+                        <option value="5">5</option>l
+                        <option value="6">6</option>
+                        <option value="7">7</option>
+                        <option value="8">8</option>
+                        <option value="9">9</option>
+                        <option value="10">10</option>
+                        <option value="11">11</option>
+                        <option value="12">12</option>
+                        <option value="13">13</option>
+                        <option value="14">14</option>
+                        <option value="15">15</option>
+                        <option value="16">16</option>
+                        <option value="17">17</option>
+                        <option value="18">18</option>
+                        <option value="19">19</option>
+                        <option value="20">20</option>
+                        <option value="21">21</option>
+                        <option value="22">22</option>
+                        <option value="23">23</option>
+                        <option value="24">24</option>
+                        <option value="25">25</option>
+                        <option value="26">26</option>
+                        <option value="27">27</option>
+                        <option value="28">28</option>
+                        <option value="29">29</option>
+                        <option value="30">30</option>
+                        <option value="31">31</option>
+                    </select>
+                </div>
+
+                <div class="Månad">Månad:
+                    <select id="cars">
+                        <option value="Januari">Januari</option>
+                        <option value="Februari">Februari</option>
+                        <option value="Mars">Mars</option>
+                        <option value="April">April</option>
+                        <option value="Maj">April</Maj>
+                        <option value="Juni">Juni</option>
+                        <option value="Juli">Juli</option>
+                        <option value="Augusti">Augusti</option>
+                        <option value="September">September</option>
+                        <option value="Oktober">Oktober</option>
+                        <option value="November">November</option>
+                        <option value="December">December</option>
+                    </select>
+                </div>
+
+                <div class="År">År:
+                    <select id="År">
+                        <option value="2024">2024</option>
+                        <option value="2025">2025</option>
+                        <option value="2026">2026</option>
+                    </select>
+                </div>
+            </div>
+            
+            <div class="Pris">
+                <form></form>
+                    <label for="Pris">Pris och specifaktioner: </label><br>
+                    <textarea name="pris" id="pris" rows="4" cols="50"></textarea><br>
+                    <input type="submit" value="Submit">
+                </form>
+            </div>
+        </div>
+        <img src="https://img.goodfon.com/wallpaper/nbig/b/eb/porosenok-svinka-svinia-khriushka-priroda-trava-piatachok-mo.webp" alt="pig">
     </div>
 
     <br>
     <div class="OmOss">
-        <a href="">Om oss</a>
-        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Perferendis quam aliquam consectetur eius delectus alias asperiores voluptas nemo minus voluptates culpa similique sit, modi consequuntur incidunt accusantium aspernatur assumenda necessitatibus.</p>
-    
+        <div class="text2">
+            <h2>Om oss</h2>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Perferendis quam aliquam consectetur eius delectus alias asperiores voluptas nemo minus voluptates culpa similique sit, modi consequuntur incidunt accusantium aspernatur assumenda necessitatibus.</p><br>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Reiciendis sapiente aliquid, voluptatem dignissimos assumenda aspernatur, molestias mollitia asperiores doloribus fuga eius libero ratione error nesciunt aut optio! Earum, iste ad. Lorem ipsum dolor sit amet consectetur, adipisicing elit. Aliquid exercitationem porro harum nisi? Deleniti placeat neque dolores totam accusamus. Sapiente autem totam culpa minima perspiciatis voluptate incidunt facere nihil quasi!</p>
+        </div>
     </div>
+
 </body>
 </html>
